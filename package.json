@@ -1,0 +1,23 @@
+{
+  "name": "3amsalle7_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iyed bencheikh",
+  "license": "ISC",
+  "dependencies": {
+    "3amsalle7_back": "file:",
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "joi": "^17.12.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.1",
+    "nodemon": "^3.1.0",
+    "sequelize": "^6.36.0",
+    "sequelize-cli": "^6.6.2"
+  }
+}

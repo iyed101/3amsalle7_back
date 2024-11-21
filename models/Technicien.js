@@ -1,0 +1,38 @@
+module.exports=(Sequelize,DataType)=>{
+    const Technicien=Sequelize.define("Technicien",{
+        nom:{
+            type:DataType.STRING,
+            allowNull:false
+        },
+        prenom:{
+            type:DataType.STRING,
+            allowNull:false
+        },
+        cin:{
+            type:DataType.STRING,
+            allowNull:false
+        },
+        numTel:{
+            type:DataType.STRING,
+            allowNull:false
+        },
+        email:{
+            type:DataType.STRING,
+            allowNull:false
+        },
+        zone:{
+            type:DataType.STRING,
+            allowNull:false
+        },
+        secteur:{
+            type:DataType.STRING,
+            allowNull:false
+        }
+    })
+    Technicien.associate=models=>{
+        Technicien.hasMany(models.Ticket,{
+            onDelete:"cascade"
+        })
+    }
+    return Technicien
+}
